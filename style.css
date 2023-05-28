@@ -96,7 +96,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #454545;
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
@@ -113,7 +113,7 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #454545;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -123,12 +123,12 @@ section .title::after{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: #454545;
+    color: #fff;
 }
 
 /* menu btn styling */
 .menu-btn{
-    color: #454545;
+    color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -167,12 +167,11 @@ section .title::after{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
-    color: #454545;
+    color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    
 }
 .home .max-width{
   width: 100%;
@@ -241,7 +240,7 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right button{
+.about .about-content .right a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -270,7 +269,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-  
+    content: "what i provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -381,7 +380,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "Few Projects along with source code";
+    content: "who with me";
 }
 .teams .carousel .card{
     background: #222;
@@ -445,7 +444,6 @@ section .title::after{
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
-    background-color : "black"
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -679,4 +677,15 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+.submitResumeButton{
+    margin-top: 5%;
+    padding: 2%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border : 1px;
+    border-style: none;
+    cursor: pointer;
 }
